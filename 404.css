@@ -1,0 +1,52 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  
+  /* Error Code Styling */
+  .error-code {
+    display: inline-block;
+    margin-right: 20px;
+    animation: distort 1s infinite alternate;
+  }
+  
+  @keyframes distort {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 0.8);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  /* Illustration (Optional) */
+  .illustration {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    background-image: url("https://pixabay.com/illustrations/error-web-error-404-error-code-7902720/"); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
