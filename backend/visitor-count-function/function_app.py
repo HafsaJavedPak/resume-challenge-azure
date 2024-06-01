@@ -22,6 +22,7 @@ logging.info(conn_str)
 table_service_client = TableServiceClient.from_connection_string(conn_str=conn_str)
 table_client = table_service_client.get_table_client(table_name=table_name)
 
+# creating the structure of entity from table
 visitor_entry = {
     'PartitionKey' : "VisitorsCount",
     'RowKey' : "resume_visitors",
@@ -33,6 +34,7 @@ visitor_entry = {
 @app.function_name(name="visitorCount")
 @app.route(route="count", auth_level=func.AuthLevel.ANONYMOUS)
 def main(req : func.HttpRequest) -> func.HttpResponse:
+    # error handling
     if not conn_str:
         return func.HttpResponse(
         body='Error: Missing COSMOSDB_CONNECTION_STRING environment variable.',
