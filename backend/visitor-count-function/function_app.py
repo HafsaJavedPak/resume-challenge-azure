@@ -50,6 +50,7 @@ def main(req : func.HttpRequest) -> func.HttpResponse:
             try:
                 table_client.update_entity(entity=count)
                 logging.info(f"Visitor count updated to: {count['value']}")
+            
             except LookupError as e:
                 logging.error(f"Entity not found: {e}")
                 return func.HttpResponse (
