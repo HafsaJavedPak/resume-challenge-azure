@@ -1,6 +1,7 @@
+import azure.functions as func
 import os
 import logging
-import azure.functions as func
+import azure
 
 from azure.core.exceptions import ClientAuthenticationError, ResourceNotFoundError
 from azure.data.tables import TableServiceClient, TableClient
@@ -27,7 +28,9 @@ visitor_entry = {
     'value' : 0
 }
 
-# @app.function_name(name="visitorCount")
+
+# @azure.functions.function.FunctionName("visitorCount")
+@app.function_name(name="visitorCount")
 @app.route(route="count", auth_level=func.AuthLevel.ANONYMOUS)
 def main(req : func.HttpRequest) -> func.HttpResponse:
     if not conn_str:

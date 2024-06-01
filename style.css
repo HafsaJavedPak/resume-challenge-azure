@@ -1,3 +1,8 @@
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent element */
+}
+
 /* General Styles */
 body {
     font-family: 'Raleway', sans-serif;  /* You can choose a different font family */
@@ -80,4 +85,5 @@ body {
 
   
   /* Other sections can have similar styling customizations */
+
   
