@@ -11,8 +11,6 @@
 //   }
 
 
-
-
 let visitorCount;
 
 window.onload =  () => {
