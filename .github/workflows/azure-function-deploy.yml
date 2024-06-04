@@ -51,8 +51,8 @@ jobs:
         enable-oryx-build: true
 
     # Azure logout
-    - name: logout
-      run: |
-            az logout
-      if: always()
+    # - name: logout
+    #   run: |
+    #         az logout
+    #   if: always()
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
