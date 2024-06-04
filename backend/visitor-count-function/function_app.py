@@ -6,7 +6,6 @@ import azure.functions as func
 from azure.core.exceptions import ClientAuthenticationError, ResourceNotFoundError
 from azure.data.tables import TableServiceClient, TableClient
 from azure.core.credentials import AzureNamedKeyCredential
-from dotenv import load_dotenv
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 # app.add_storage()
@@ -16,6 +15,7 @@ table_name = os.environ['table_name']
 
 
 # NOTE: unncomment the following lines if u r running the function locallly
+# from dotenv import load_dotenv
 # load_dotenv()
 # conn_str = os.getenv('the_connection_string')
 # table_name = os.getenv('table_name')
