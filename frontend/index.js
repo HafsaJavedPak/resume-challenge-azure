@@ -23,23 +23,28 @@ function trackVisitor() {
   else {
     url = "https://my-best-portfolio-function.azurewebsites.net/api/count"; 
   }
+  // calls azure function
   let regex = /\d+/;
-      let match;
-      fetch(url)
-        .then(response => response.text()) // Visitor Count is [num].
-        .then(text => {
-        // to extract number from response
-          match = text.match(regex);
-          if (match) {
-              const visitorCount = parseInt(match[0]);
-              const visitorCountElement = document.getElementById("visitor-count");
-              visitorCountElement.textContent = `${visitorCount} vistor${visitorCount == 1 ? "":"s"}`;
-          } 
-          else {
-              console.log(text); // Output: "Visitor count is 25."
-          }
-        })
-        .catch(error => console.error(error));
+  let match;
+  fetch(url)
+    .then(response => response.text()) // Visitor Count is [num].
+    .then(text => {
+    // to extract number from response
+      match = text.match(regex);
+      if (match) {
+          const visitorCount = parseInt(match[0]);
+          const visitorCountElement = document.getElementById("visitor-count");
+          visitorCountElement.textContent = `${visitorCount} vistor${visitorCount == 1 ? "":"s"}`;
+      } 
+      else {
+          console.log(text); // Output: "Visitor count is 25."
+      }
+    })
+    .catch(error => console.error(error));
+    
+    // updates visitor number
+    const visitorCountElement = document.getElementById("visitor-count");
+    visitorCountElement.textContent = `${num} vistor${num == 1 ? "":"s"}`;
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
