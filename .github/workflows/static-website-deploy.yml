@@ -24,7 +24,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --no-wait --content-paths  "./frontend/*" --profile-name ${{ secrets.STATIC_WEBSITE_CDN_PROFILE_NAME}} --name ${{ secrets.STATIC_WEBSITE_CDN_ENDPOINT}} --resource-group ${{secrets.RESOURCE_GROUP}}
+           az cdn endpoint purge --no-wait --content-paths  "/*" --profile-name ${{ secrets.STATIC_WEBSITE_CDN_PROFILE_NAME}} --name ${{ secrets.STATIC_WEBSITE_CDN_ENDPOINT}} --resource-group ${{secrets.RESOURCE_GROUP}}
 
   # Azure logout
     - name: logout
