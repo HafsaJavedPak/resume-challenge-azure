@@ -47,4 +47,3 @@ function trackVisitor() {
 document.addEventListener('DOMContentLoaded', (event) => {
   trackVisitor();
 });
-
