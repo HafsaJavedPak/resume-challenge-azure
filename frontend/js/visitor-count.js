@@ -32,7 +32,7 @@ function trackVisitor() {
     // to extract number from response
       match = text.match(regex);
       if (match) {
-        // updates visitor number
+        // updates visitor number in index.html
           const visitorCount = parseInt(match[0]);
           const visitorCountElement = document.getElementById("visitor-count");
           visitorCountElement.textContent = `${visitorCount}`;
