@@ -38,7 +38,7 @@ function trackVisitor() {
           visitorCountElement.textContent = `${visitorCount}`;
       } 
       else {
-          console.log(text); // Output: "Visitor count is 25."
+          console.log(text); 
       }
     })
     .catch(error => console.error(error));
