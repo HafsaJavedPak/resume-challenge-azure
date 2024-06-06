@@ -32,6 +32,7 @@ function trackVisitor() {
     // to extract number from response
       match = text.match(regex);
       if (match) {
+        // updates visitor number
           const visitorCount = parseInt(match[0]);
           const visitorCountElement = document.getElementById("visitor-count");
           visitorCountElement.textContent = `${visitorCount}`;
@@ -41,10 +42,6 @@ function trackVisitor() {
       }
     })
     .catch(error => console.error(error));
-    
-    // updates visitor number
-    const visitorCountElement = document.getElementById("visitor-count");
-    visitorCountElement.textContent = `${num} vistor${num == 1 ? "":"s"}`;
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
