@@ -10,7 +10,7 @@ function fetchVisitorCount() {
       if (match) {
           const visitorCount = parseInt(match[0]);
           const visitorCountElement = document.getElementById("visitor-count");
-          visitorCountElement.textContent = `${visitorCount} vistor${visitorCount == 1 ? "":"s"}`;
+          visitorCountElement.textContent = `${visitorCount}`;
       } 
       else {
           console.log(text); // Output: "Visitor count incremented to 25."
