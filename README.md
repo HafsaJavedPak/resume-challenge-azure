@@ -4,6 +4,8 @@
 
 This project demonstrates a portfolio website that leverages Azure Functions and Cosmos DB to track visitor count. The website is built with HTML and deployed as a static website on Azure Blob Storage.
 
+From Cloud Resume Challenge: https://cloudresumechallenge.dev/docs/the-challenge/azure/.
+
 ### Technologies Used
 
 * Azure Functions (Python)
