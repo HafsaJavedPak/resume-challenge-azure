@@ -29,7 +29,7 @@ frontend/
   js/
 
   ... (other HTML files and assets)
-.env  # (Optional) Environment variables file
+.env 
 ```
 
 ### Deployment Steps
