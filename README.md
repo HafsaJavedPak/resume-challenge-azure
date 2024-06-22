@@ -59,8 +59,7 @@ frontend/
 
 * [https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/tables/azure-data-tables#getting-started](Azure Functions DSK)
 * [https://learn.microsoft.com/en-us/azure/cosmos-db/](Cosmos DB documentation)
-* Azure Blob Storage documentation: [https://learn.microsoft.com/en-us/azure/storage/blobs/](https://learn.microsoft.com/en-us/azure/storage/blobs/)
 * https://stackoverflow.com/questions/69058910/limit-azure-functions-call-from-static-website-in-blob-storage
-* [https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel](CI/CD for static website deployment)
+* [CI/CD for static website deployment](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel)
 * [GitHub Worflow Samples](https://github.com/Azure/actions-workflow-samples)
 
