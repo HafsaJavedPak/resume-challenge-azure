@@ -6,6 +6,8 @@ This project demonstrates a portfolio website that leverages Azure Functions and
 
 From Cloud Resume Challenge: https://cloudresumechallenge.dev/docs/the-challenge/azure/.
 
+![Architecture of project](initial-overview.png)
+
 ### Technologies Used
 
 * Azure Functions (Python)
